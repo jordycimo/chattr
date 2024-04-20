@@ -1,0 +1,17 @@
+Telnet is the main focus for the client software, and its unencrypted and old as hell. 
+For now you can connect using the included script "client.bat"/"client.sh", but in 
+the future I will probably add basic public key encryption with some client.py script.
+Anyway,
+
+--how to host a server--
+  1. run the program.
+  2. input your username. (yes the server has a username. how nifty.)
+  3. it will listen on port 8088, but this can be changed in the server.py file
+  4. port forward a TCP port on your router
+    a. its a bit insecure in the sense that someone could see the trafic going into this port (because telnet is unencrypted)
+    b. later i will add SSL (secure sockets layer)
+  5. the client can connect and they will now be able to chat with you.
+  6. to be goated, get a domain attatched to the ip adress.
+
+--how to use telnet--
+  1. $ telnet xxx.xxx.xxx.xxx 8088
